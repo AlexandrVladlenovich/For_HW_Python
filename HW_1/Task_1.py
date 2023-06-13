@@ -1,11 +1,22 @@
-a = int(input())
-b = int(input())
-c = int(input())
-if a<b+c and b<a+c and c<a+b:
-    print("Треугольник существует")
-else:
-    print("Треугольник не существует")
-if a==c==b:
-        print("Треугольник равносторонний")
-if a==c!=b or b==a!=c or c==b!=a:
+TEXT = f"Введите длинну стороны треугольника "
+NOT_EXIST = "Tреугольника с такими сторонами не существует!"
+a = int(input(TEXT + "№1: "))
+b = int(input(TEXT + "№2: "))
+c = int(input(TEXT + "№3: "))
+
+check1 = a + b
+check2 = a + c
+check3 = b + c
+
+if (a > 0 and b > 0 and c > 0):
+    if (check1 < c or check2 < b or check3 < a):
+        print(NOT_EXIST)
+    else:
+        if (a == b and b == c and c == a):
+            print("Треугольник равносторонний")
+        elif (a == b or b == c or c == a):
             print("Треугольник равнобедренный")
+        else:
+            print("Треугольник разносторонний")
+else:
+    print(NOT_EXIST)
