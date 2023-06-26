@@ -8,7 +8,7 @@ check1 = a + b
 check2 = a + c
 check3 = b + c
 
-if (a > 0 and b > 0 and c > 0):
+if a > 0 and b > 0 and c > 0:
     if (check1 < c or check2 < b or check3 < a):
         print(NOT_EXIST)
     else:
