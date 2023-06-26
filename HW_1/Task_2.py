@@ -10,7 +10,7 @@ if num >= MIN and num <= 100_000:
     for i in range(divider, num - 1):
         if num % i == 0:
             count += 1
-    if (count <= 0):
+    if count <= 0:
         print("Число является простым")
     else:
         print("Число является составным")
