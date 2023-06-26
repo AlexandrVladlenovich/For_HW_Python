@@ -6,7 +6,7 @@ num = int(input(f"Введите число от {MIN} до {MAX}: "))
 divider = 2
 count = 0
 
-if (num >= MIN and num <= 100_000):
+if num >= MIN and num <= 100_000:
     for i in range(divider, num - 1):
         if (num% i == 0):
             count += 1
