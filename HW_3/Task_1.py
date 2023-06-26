@@ -3,7 +3,7 @@
 
 def double_list(array: list[int]) -> list[int]:
     res = set()
-    for el in array:
+    for el in set(array):
         counter = array.count(el)
         if counter > 1:
             res.add(el)
